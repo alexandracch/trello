@@ -167,3 +167,15 @@ h4{
   background: rgb(3,81,126);
 }
 
+.display-div{
+  display: none;
+}
+
+.lista-change{
+  float: left;
+  margin-left: 30px;
+  width: 280px;
+  height: 100px;
+  background-color: rgb(226,228,230);
+}
+
