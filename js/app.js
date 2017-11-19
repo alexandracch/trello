@@ -24,12 +24,37 @@ botonGuardar.addEventListener('click', function(event) {
   
   if (input.value) { 
     var li = document.createElement('li');
+    var atributo = document.createAttribute('href');
+    var divLi = document.createElement('div');
+    var divAgregar = document.createElement('div');
     var tarea = document.createElement('p'); 
+    var anchor = document.createElement('p');
+    
+    anchor.textContent = 'Añadir tarjeta...';
+    anchor.classList.add('anchor-decoration')
+    divAgregar.appendChild(anchor);
+    divAgregar.classList.add('agregar-tarjeta');
+    divAgregar.classList.add('agregar-tarjeta:hover');
+    divLi.appendChild(divAgregar);
+    divLi.appendChild(tarea);
+    divLi.classList.add('div-tarea');
+    listaTareas.appendChild(divLi);
+
     tarea.textContent = input.value;
-    tarea.classList.add('li'); 
+    
     li.appendChild(tarea);
     listaTareas.appendChild(tarea);
     input.value = ' ';  
   }
 });
 
+/*<li>
+                <div class="div-tarea">
+
+                    <p>Hola</p>
+                    <div class="agregar-tarjeta">
+                        <a class="a" href="#">Añadir una tarjeta...</a>   
+                    </div>
+                    
+                </div>
+            </li> */

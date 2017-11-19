@@ -230,14 +230,38 @@ h4{
   color: rgb(99, 99, 99);
 }
 
-ul{
+/*ul{
   display: none;
+  background-color: rgb(190,192,194);
+  width: 260px;
+  height: auto;
+  margin-left: 30px;
+}*/
+
+.ocultar {
+  display: none;
+}
+
+.div-tarea{
+  outline-color: 1px solid red;
   background-color: rgb(190,192,194);
   width: 260px;
   height: auto;
   margin-left: 30px;
 }
 
-.ocultar {
-  display: none;
+.agregar-tarjeta{
+  width: 260px;
+  height: auto;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  background-color: rgb(190,192,194);
+}
+
+.agregar-tarjeta:hover{
+  background-color: rgb(162, 164, 165);
+}
+
+.anchor-decoration {
+  text-decoration: underline;
 }
