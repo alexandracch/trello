@@ -17,6 +17,8 @@ divLista1.addEventListener('click', function(event) {
 });
 
 botonGuardar.addEventListener('click', function(event) {
+  divLista1.classList.add('ocultar');
+  divListaChange.classList.toggle('visible');
   divListaChange.classList.add('movimiento');
   listaTareas.classList.add('visible');
   

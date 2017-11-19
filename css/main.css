@@ -177,6 +177,7 @@ h4{
   height: 100px;
   background-color: rgb(226,228,230);
   display: none;
+  margin-right: 30px;
 }
 /*class="movimiento"*/
 .movimiento{
@@ -184,8 +185,8 @@ h4{
   width: 280px;
   height: 100px;
   display: inline-block;
-  margin-left: 30px;
-  display: inline-block;
+  margin-left: 330px;
+  margin-right: 30px;
 }
 
 .visible {
@@ -237,3 +238,6 @@ ul{
   margin-left: 30px;
 }
 
+.ocultar {
+  display: none;
+}
