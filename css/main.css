@@ -148,9 +148,10 @@ h4{
 }
 
 .lista1{
+  margin-top: 0px;
   width: 280px;
   height: 40px; 
-  border-radius: 3px;
+  border-radius: 4px;
   color: white;
   float: left;
   margin-left: 30px;
@@ -158,6 +159,7 @@ h4{
 }
 
 .añade-lista{
+  border-radius: 4px;
   font-size: 16px;
   margin: 9px 5px 7px 10px;
 }
@@ -172,6 +174,7 @@ h4{
 }
 
 .lista-change {
+  border-radius: 4px;
   margin-left: 30px;
   width: 280px;
   height: 100px;
@@ -235,7 +238,7 @@ h4{
 }
 
 .div-tarea{
-  outline-color: 1px solid red;
+  border-radius: 4px;
   background-color: rgb(226,228,230);
   width: 260px;
   height: auto;
@@ -263,6 +266,7 @@ h4{
   text-decoration: underline;
 }
 .tarea {
+  border-radius: 4px;
   width: 250px;
   height: 50;
   margin-top: 0px;
@@ -284,6 +288,7 @@ textarea{
   margin-left: 11px;
   padding:4px;
   margin-bottom: 10px;
+  border-radius: 4px;
 }
 
 .anadir-boton{
@@ -323,6 +328,7 @@ display:inline-block;
  }
 
  .tarea-agregada {
+  border-radius: 4px;
   width: 250px;
   height: 50;
   margin-top: 0px;
@@ -334,3 +340,5 @@ display:inline-block;
   color: rgb(0, 0, 0);
   float: left;
  }
+
+ 
