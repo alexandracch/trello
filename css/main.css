@@ -185,7 +185,7 @@ h4{
   width: 280px;
   height: 100px;
   display: inline-block;
-  margin-left: 330px;
+  margin-left: 30px;
   margin-right: 30px;
 }
 
@@ -230,38 +230,46 @@ h4{
   color: rgb(99, 99, 99);
 }
 
-/*ul{
-  display: none;
-  background-color: rgb(190,192,194);
-  width: 260px;
-  height: auto;
-  margin-left: 30px;
-}*/
-
 .ocultar {
   display: none;
 }
 
 .div-tarea{
   outline-color: 1px solid red;
-  background-color: rgb(190,192,194);
+  background-color: rgb(226,228,230);
   width: 260px;
   height: auto;
   margin-left: 30px;
+  display: inline-block;
 }
 
 .agregar-tarjeta{
-  width: 260px;
-  height: auto;
+  width: 250px;
+  height: 50px;
   margin-top: 4px;
   margin-bottom: 4px;
-  background-color: rgb(190,192,194);
+  background-color: rgb(226,228,230);
+  padding: 4px;
+  margin-left: 4px; 
+  color: rgb(99, 99, 99);
 }
 
 .agregar-tarjeta:hover{
   background-color: rgb(162, 164, 165);
+  cursor: pointer;
 }
 
 .anchor-decoration {
   text-decoration: underline;
+}
+.tarea {
+  width: 250px;
+  height: 50;
+  margin-top: 0px;
+  margin-bottom: 4px;
+  background-color: rgb(226,228,230);
+  padding: 4px;
+  margin-left: 4px; 
+  color: rgb(0, 0, 0);
+  float: left;
 }
