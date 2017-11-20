@@ -282,12 +282,14 @@ textarea{
   display: none;
   /*display: inline-block;*/
   margin-left: 11px;
-  padding:4px; 
+  padding:4px;
+  margin-bottom: 10px;
 }
 
 .anadir-boton{
   margin-left: 10px;
   font-size: 15px;
+  margin-bottom: 10px;
   padding: 6px;
   border-radius: 4px;
   border: none;
@@ -305,6 +307,7 @@ textarea{
   color: rgb(153,153,153);
   font-size: 24px;
   margin-left: 15px;
+  margin-bottom: 10px;
   display: none;
 }
 

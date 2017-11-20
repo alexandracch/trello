@@ -39,8 +39,12 @@ addTarjeta.addEventListener('click', function(event) {
   // hacer visible boton añadir y equis
   botonAnadir.classList.add('visible-dos');
   equis.classList.add('visible-dos');
+  addTarjeta.classList.add('ocultar');
 });
 
+/*botonAnadir.addEventListener('click', function(event) {
+  
+});*/
 
  
   /* // div contenedor
