@@ -21,46 +21,45 @@ var botonAnadir = document.getElementById('boton-anadir');
 
 var equis = document.getElementById('equis');
 
-
-divLista1.addEventListener('click', function(event) {
-  divLista1.classList.add('display-div');
-  divListaChange.classList.add('visible');
-});
-
-botonGuardar.addEventListener('click', function(event) {  
-  // Para que desaparezcan elementos y se muevan
- 
-  divLista1.classList.add('ocultar');
-  divListaChange.classList.toggle('visible');
-  divListaChange.classList.add('movimiento');
-
+window.addEventListener('load', function() {
+  divLista1.addEventListener('click', function(event) {
+    divLista1.classList.add('display-div');
+    divListaChange.classList.add('visible');
+  });
   
-  divTarea.classList.add('visible-div-tarea'); 
+  botonGuardar.addEventListener('click', function(event) {  
+    // Para que desaparezcan elementos y se muevan
+   
+    divLista1.classList.add('ocultar');
+    divListaChange.classList.toggle('visible');
+    divListaChange.classList.add('movimiento');
   
-  pLista.textContent = input.value;
-  input.value = ' '; 
+    
+    divTarea.classList.add('visible-div-tarea'); 
+    
+    pLista.textContent = input.value;
+    input.value = ' '; 
+  });
+  
+  addTarjeta.addEventListener('click', function(event) {
+    // hacer visible text tarea
+    textTarea.classList.add('visible-div-tarea');
+    // hacer visible boton añadir y equis
+    botonAnadir.classList.add('visible-dos');
+    equis.classList.add('visible-dos');
+    addTarjeta.classList.add('ocultar');
+  });
+  
+  botonAnadir.addEventListener('click', function(event) {
+    var pNuevaTarjeta = document.createElement('p');
+  
+    var areaValue = document.createTextNode(textTarea.value);
+  
+  
+    pNuevaTarjeta.appendChild(areaValue);
+    pNuevaTarjeta.classList.add('tarea-agregada');
+    divTarea.insertBefore(pNuevaTarjeta, textTarea);
+  
+    textTarea.value = ' ';
+  });
 });
-
-addTarjeta.addEventListener('click', function(event) {
-  // hacer visible text tarea
-  textTarea.classList.add('visible-div-tarea');
-  // hacer visible boton añadir y equis
-  botonAnadir.classList.add('visible-dos');
-  equis.classList.add('visible-dos');
-  addTarjeta.classList.add('ocultar');
-});
-
-botonAnadir.addEventListener('click', function(event) {
-  var pNuevaTarjeta = document.createElement('p');
-
-  var areaValue = document.createTextNode(textTarea.value);
-
-
-  pNuevaTarjeta.appendChild(areaValue);
-  pNuevaTarjeta.classList.add('tarea-agregada');
-  divTarea.insertBefore(pNuevaTarjeta, textTarea);
-
-  textTarea.value = ' ';
-});
-
- 
