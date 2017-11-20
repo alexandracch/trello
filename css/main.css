@@ -240,7 +240,7 @@ h4{
   width: 260px;
   height: auto;
   margin-left: 30px;
-  display: inline-block;
+ /* display: none;*/
 }
 
 .agregar-tarjeta{
@@ -273,3 +273,47 @@ h4{
   color: rgb(0, 0, 0);
   float: left;
 }
+
+.visible-div-tarea {
+  display: inline-block;
+}
+
+textarea{
+  display: none;
+  /*display: inline-block;*/
+  margin-left: 11px;
+  padding:4px; 
+}
+
+.anadir-boton{
+  margin-left: 10px;
+  font-size: 15px;
+  padding: 6px;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  background-color: rgb(90,172,68);
+  display: none;
+}
+
+.anadir-boton:hover{
+  cursor: pointer;
+  background-color: rgb(58, 153, 31);
+}
+
+.fa-times-circle-o{
+  color: rgb(153,153,153);
+  font-size: 24px;
+  margin-left: 15px;
+  display: none;
+}
+
+.fa-times-circle-o:hover{
+  cursor: pointer;
+  color: rgb(99, 99, 99);
+  display: none;
+}
+
+.visible-dos {
+display:inline-block;
+ }
