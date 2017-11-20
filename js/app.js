@@ -9,9 +9,22 @@ var input = document.getElementById('input');
 // main
 var main = document.body.children[2];
 
+var pLista = document.getElementById('nombre-lista');
+
+var divTarea = document.getElementById('div-tarea');
+
+var addTarjeta = document.getElementById('add-tarjeta');
+
+var textTarea = document.getElementById('text-tarea');
+
+var botonAnadir = document.getElementById('boton-anadir');
+
+var equis = document.getElementById('equis');
+
+
 divLista1.addEventListener('click', function(event) {
   divLista1.classList.add('display-div');
-  divListaChange.classList.add('visible')
+  divListaChange.classList.add('visible');
 });
 
 botonGuardar.addEventListener('click', function(event) {  
@@ -21,17 +34,12 @@ botonGuardar.addEventListener('click', function(event) {
   divListaChange.classList.toggle('visible');
   divListaChange.classList.add('movimiento');
 
-  var divTarea = document.getElementById('div-tarea');
+  
   divTarea.classList.add('visible-div-tarea'); 
-  var pLista = document.getElementById('nombre-lista');
+  
   pLista.textContent = input.value;
   input.value = ' '; 
 });
-
-var addTarjeta = document.getElementById('add-tarjeta');
-var textTarea = document.getElementById('text-tarea');
-var botonAnadir = document.getElementById('boton-anadir');
-var equis = document.getElementById('equis');
 
 addTarjeta.addEventListener('click', function(event) {
   // hacer visible text tarea
@@ -42,41 +50,17 @@ addTarjeta.addEventListener('click', function(event) {
   addTarjeta.classList.add('ocultar');
 });
 
-/*botonAnadir.addEventListener('click', function(event) {
-  
-});*/
+botonAnadir.addEventListener('click', function(event) {
+  var pNuevaTarjeta = document.createElement('p');
+
+  var areaValue = document.createTextNode(textTarea.value);
+
+
+  pNuevaTarjeta.appendChild(areaValue);
+  pNuevaTarjeta.classList.add('tarea-agregada');
+  divTarea.insertBefore(pNuevaTarjeta, textTarea);
+
+  textTarea.value = ' ';
+});
 
  
-  /* // div contenedor
-  var crearDiv = document.createElement('div');
-  // div contenedor de la nueva tarea
-  var nuevaTarea = document.createElement('div');
-  // obtener lo escrito en el input
-  var tarea = document.createElement('p');
-  // barra de abajo
-  var nuevaTarjeta = document.createElement('p');
-  // div de nueva tarjeta
-  var divNuevaTarjeta = document.createElement('div');
-  // ahora la funcion en sí
-  if (input.value) {
-
-  // para añadir nueva tarjeta
-    nuevaTarjeta.textContent = 'Añadir tarjeta...';
-    nuevaTarjeta.classList.add('anchor-decoration');
-    nuevaTarjeta.classList.add('agregar-tarjeta');
-    nuevaTarjeta.classList.add('agregar-tarjeta');
-    nuevaTarea.setAttribute('id', 'nuevaTarjeta');
-    // agregamos la tarea
-    tarea.textContent = input.value;
-    tarea.classList.add('tarea');
-  
-    // ponemos los 2 hijos al div
-    crearDiv.appendChild(tarea);
-    crearDiv.appendChild(nuevaTarjeta);
-    crearDiv.classList.add('div-tarea');
-    
-    // agregamos el div 
-    main.appendChild(crearDiv);
-    input.value = ' ';  
-  }
-});*/

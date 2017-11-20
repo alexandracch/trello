@@ -240,7 +240,7 @@ h4{
   width: 260px;
   height: auto;
   margin-left: 30px;
- /* display: none;*/
+  display: none;
 }
 
 .agregar-tarjeta{
@@ -319,4 +319,17 @@ textarea{
 
 .visible-dos {
 display:inline-block;
+ }
+
+ .tarea-agregada {
+  width: 250px;
+  height: 50;
+  margin-top: 0px;
+  margin-bottom: 4px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 3px;
+  padding: 6px;
+  margin-left: 4px; 
+  color: rgb(0, 0, 0);
+  float: left;
  }
