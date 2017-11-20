@@ -11,7 +11,7 @@ El reto consiste en:
 
 * Replicar la página web de Trello.
 
-![Trello](../assets/img/trello.JPG)
+![Trello](assets/img/trello.JPG)
 
 ## Consideraciones
 
