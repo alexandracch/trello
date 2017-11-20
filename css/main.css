@@ -314,6 +314,7 @@ textarea{
 .fa-times-circle-o:hover{
   cursor: pointer;
   color: rgb(99, 99, 99);
+  cursor: pointer;
   display: none;
 }
 
